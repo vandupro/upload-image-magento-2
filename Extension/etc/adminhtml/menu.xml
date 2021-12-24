@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Vendor_Extension::view" title="Magecomp" 
+        module="Vendor_Extension" sortOrder="50" resource="Vendor_Extension::view"/>
+ 
+        <add id="Vendor_Extension::menu" title="Manage Grid" 
+        module="Vendor_Extension" sortOrder="20" parent="Vendor_Extension::view" 
+        action="uiexample/index/index" resource="Vendor_Extension::menu"/>
+
+        <add id="Vendor_Extension::form" title="Manage form" 
+        module="Vendor_Extension" sortOrder="22" parent="Vendor_Extension::view" 
+        action="uiexample/form/index" resource="Vendor_Extension::menu"/>
+    </menu>
+</config>
